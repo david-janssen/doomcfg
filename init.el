@@ -4,7 +4,7 @@
  :checkers
  syntax                           ; tasing you for every semicolon you forget
  (spell +flyspell)                ; tasing you for misspelling mispelling
- grammar                          ; tasing grammar mistake every you make
+ ;; grammar                       ; David good write already make words happen happy, no need
 
  :completion
  (company +childframe)            ; the ultimate code completion backend
