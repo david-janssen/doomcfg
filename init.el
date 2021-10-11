@@ -1,9 +1,8 @@
 ;;; init.el -*- lexical-binding: t; -*-
-
 (doom!
  :checkers
  syntax                           ; tasing you for every semicolon you forget
- (spell +flyspell)                ; tasing you for misspelling mispelling
+ (spell +aspell)                  ; tasing you for misspelling mispelling
  ;; grammar                       ; David good write already make words happen happy, no need
 
  :completion
