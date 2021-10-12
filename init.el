@@ -51,7 +51,7 @@
  (eval +overlay)                  ; run code, run (also, repls)
  lookup                           ; navigate your code and its documentation
  lsp                              ; M-x vscode
- magit                            ; a git porcelain for Emacs
+ (magit +forge)                   ; a git porcelain for Emacs
  pass                             ; password manager for nerds
  pdf                              ; pdf enhancements
  rgb                              ; creating color strings

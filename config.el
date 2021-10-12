@@ -26,7 +26,12 @@
   web-mode-markup-indent-offset 2
 
   browse-url-browser-function #'browse-url-chromium
+
+  auth-sources '("~/.authinfo.gpg")
+
   )
+(setf (alist-get ?- +ligatures-composition-alist)
+  (regexp-opt '("-->" "--->" "->-" "-<" "-<-" "-<<" "->" "->>" "-}" "-~" "-:" "-|")))
 
 ;; Configure folding
 (vimish-fold-global-mode 1) ; Enable persistent folds
@@ -36,6 +41,10 @@
   (setq company-idle-delay .1
         company-echo-delay .1
         company-minimum-prefix-length 3))
+
+(after! magit
+  (setq forge-topic-list-limit '(60 . 0) ; Hides closed topics
+        ))
 
 ;; Disable global checking
 (global-flycheck-mode 'disable)
