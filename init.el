@@ -30,7 +30,8 @@
  data                             ; config/data formats
  dhall                            ; Configs guaranteed to terminate
  emacs-lisp                       ; drown in parentheses
- (haskell +lsp)                   ; a language that's lazier than I am
+ ;; (haskell +lsp)                ; a language that's lazier than I am
+ haskell                          ; LSP seems to make my laptop slllooooowwwww
  json                             ; At least it ain't XML
  (markdown +grip)                 ; writing docs for people to ignore
  nix                              ; I hereby declare "nix geht mehr!"
