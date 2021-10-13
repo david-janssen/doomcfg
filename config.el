@@ -42,9 +42,20 @@
         company-echo-delay .1
         company-minimum-prefix-length 3))
 
+;; Configure magit
 (after! magit
-  (setq forge-topic-list-limit '(60 . 0) ; Hides closed topics
-        ))
+  ;; Hides closed topics
+  (setq forge-topic-list-limit '(60 . 0)))
+
+;; Define a silly line-drawing function
+(defun dj-draw-line ()
+  (interactive)
+  (let ((ll (save-excursion (end-of-line) (current-column))))
+    (insert-char ?- (- 80 ll))))
+
+(map! :map global-map :niv "C-o" #'dj-draw-line)
+
+
 
 ;; Disable global checking
 (global-flycheck-mode 'disable)
